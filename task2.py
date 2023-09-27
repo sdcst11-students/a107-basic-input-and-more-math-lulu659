@@ -24,3 +24,16 @@ Your final amount is $39152.94
 You earned $14152.94 interest
 ```
 '''
+import math
+
+p = float(input("Enter the principal: "))
+r = float(input("Enter the annunal interest rate as percentage: "))
+n = float(input("Enter the number of compounding periods: "))
+t = float(input("Enter the investmetn period in years: "))
+c = n*t
+A = p*math.pow((1+r/n),c)
+B = A - p
+a = round(A, 2)
+b = round(B, 2)
+#print(c)
+print(f"Your final amout is {a} und you earned {b}")

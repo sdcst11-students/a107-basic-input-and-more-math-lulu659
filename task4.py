@@ -15,3 +15,9 @@ Enter a length in centimeters: 32
 32 centimeters is 1 feet and 1 inches
 ```
 """
+cm = float(input("Enter the length in cm: "))
+i = cm/2.54
+f = i//12
+i = i%12
+i1 = round(i,0)
+print(f"{cm} cm is {f} feet and {i1} inches.")
